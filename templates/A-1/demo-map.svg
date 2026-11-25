@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-labelledby="title desc">
+  <title id="title">햇살나무 어린이집 가상 약도</title><desc id="desc">가상의 사랑로와 햇살길, 주변 건물, 버스정류장과 어린이집 위치를 나타낸 시연용 약도</desc>
+  <rect width="800" height="540" fill="#f7f2e7"/>
+  <path d="M0 385H800" stroke="#e5d7c8" stroke-width="91"/><path d="M0 385H800" stroke="#fffdf8" stroke-width="72"/>
+  <path d="M510 0V540" stroke="#e5d7c8" stroke-width="88"/><path d="M510 0V540" stroke="#fffdf8" stroke-width="70"/>
+  <path d="M0 385H800M510 0V540" stroke="#e3cec0" stroke-width="2" stroke-dasharray="10 12"/>
+  <path d="M32 44h185q28 0 28 28v111q0 28-28 28H32q-16 0-16-16V60q0-16 16-16Z" fill="#dce5d3"/><path d="M40 237h151q20 0 20 20v57q0 20-20 20H40q-20 0-20-20v-57q0-20 20-20Z" fill="#f1dfd1"/>
+  <rect x="280" y="44" width="163" height="117" rx="18" fill="#e9dfcf"/><rect x="564" y="48" width="202" height="141" rx="18" fill="#e8dfd0"/><rect x="584" y="235" width="160" height="91" rx="18" fill="#e1e8d9"/><rect x="70" y="450" width="235" height="62" rx="14" fill="#e8e0d4"/><rect x="575" y="451" width="176" height="61" rx="14" fill="#f0dfd3"/>
+  <g font-family="Malgun Gothic, sans-serif" text-anchor="middle" fill="#79695d"><text x="130" y="126" font-size="19">초록 공원</text><text x="115" y="292" font-size="18">동네 도서관</text><text x="361" y="108" font-size="18">작은 상점</text><text x="665" y="123" font-size="18">이웃 건물</text><text x="664" y="284" font-size="18">나무 놀이터</text><text x="185" y="488" font-size="17">가상의 주변 건물</text><text x="663" y="488" font-size="17">가상의 주변 건물</text></g>
+  <g transform="translate(319 196)"><path d="M48 0C21 0 0 21 0 48c0 32 48 76 48 76s48-44 48-76C96 21 75 0 48 0Z" fill="#c77b65"/><circle cx="48" cy="46" r="21" fill="#fff8ef"/><path d="M48 57V38m0 9c-9 0-11-6-10-10 6 0 10 3 10 10Zm0-4c0-7 4-10 10-10 1 6-2 10-10 10Z" fill="none" stroke="#80503f" stroke-width="2" stroke-linecap="round"/></g>
+  <rect x="265" y="315" width="206" height="34" rx="17" fill="#80503f"/><text x="368" y="338" text-anchor="middle" fill="#fffdf9" font-family="Malgun Gothic, sans-serif" font-size="16" font-weight="bold">햇살나무 어린이집</text>
+  <g transform="translate(100 350)"><rect x="0" y="0" width="31" height="31" rx="8" fill="#8e9f86"/><path d="M9 9h13v12H9zM9 16h13M12 23h.1m7.8 0h.1" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/><rect x="40" y="1" width="149" height="29" rx="14" fill="#fffdf9"/><text x="114" y="21" text-anchor="middle" fill="#5d6859" font-family="Malgun Gothic, sans-serif" font-size="14">햇살 정류장</text></g>
+  <text x="702" y="372" fill="#a08b7c" font-family="Malgun Gothic, sans-serif" font-size="15">사랑로</text><text x="526" y="220" fill="#a08b7c" font-family="Malgun Gothic, sans-serif" font-size="15">햇살길</text>
+  <rect x="605" y="16" width="169" height="27" rx="13" fill="#fffdf9" opacity=".92"/><text x="690" y="35" text-anchor="middle" fill="#9c7867" font-family="Malgun Gothic, sans-serif" font-size="13">시연용 가상 약도</text>
+</svg>

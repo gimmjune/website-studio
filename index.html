@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203B32">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="웹사이트 스튜디오">
+  <title>우리들의 웹사이트 스튜디오</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="stylesheet" href="studio.css">
+  <script src="studio.js" defer></script>
+  <script src="studio-storage.js" defer></script>
+  <script src="studio-export.js" defer></script>
+</head>
+<body>
+  <header class="studio-header"><div class="studio-brand"><span class="studio-mark" aria-hidden="true">✳</span><div><strong>우리들의 웹사이트 스튜디오</strong><span class="header-sub">OUR WEBSITE STUDIO</span></div></div><span class="draft-label"><span class="status-dot"></span> 저장되지 않은 작업</span></header>
+  <div class="studio-layout">
+    <aside class="sidebar" aria-label="페이지 선택">
+      <p class="overline">MY WORKSPACE</p><h1>우리 어린이집의<br>이야기를 담아요.</h1>
+      <div class="model"><span>현재 디자인</span><strong id="current-model-name">A-1 따뜻한 마음</strong><small id="current-model-type">사진 중심형</small></div>
+      <button class="info-button" id="model-select-button" type="button">디자인 모델 선택 <span aria-hidden="true">›</span></button>
+      <button class="info-button" id="basic-button" type="button">기관 기본 정보 편집 <span aria-hidden="true">›</span></button>
+      <button class="info-button" id="folder-button" type="button">작업 폴더 연결 <span aria-hidden="true">›</span></button><p class="folder-note" id="folder-note">폴더 미연결 · 다운로드로 저장 가능</p>
+      <div class="side-heading"><strong>페이지</strong><span>8</span></div>
+      <nav id="page-list" aria-label="편집할 페이지"></nav>
+      <div class="photo-progress"><div><strong>사진 등록 현황</strong><span id="photo-count">0 / 24</span></div><div class="progress-track"><div id="photo-progress-bar"></div></div><small>사진을 포함한 작업은 브라우저에 자동 저장됩니다.</small></div>
+    </aside>
+    <main class="workspace">
+      <div class="workspace-head"><div><p class="overline">LIVE PREVIEW</p><h2 id="page-heading">홈</h2><p>편집할 문구나 사진을 미리보기에서 선택해 주세요.</p></div><div class="preview-controls"><div class="view-switch" role="group" aria-label="미리보기 기기"><button type="button" id="view-desktop" aria-pressed="true">PC</button><button type="button" id="view-mobile" aria-pressed="false">스마트폰</button></div><div class="zoom-controls" role="group" aria-label="미리보기 확대 및 축소"><button type="button" id="zoom-out" aria-label="미리보기 축소">−</button><button type="button" id="zoom-fit" aria-label="화면에 맞춤"><span id="zoom-value">맞춤</span></button><button type="button" id="zoom-in" aria-label="미리보기 확대">+</button></div></div></div>
+      <div class="preview-stage" id="preview-stage"><div class="preview-viewport" id="preview-viewport"><div class="preview-frame" id="preview-frame"><div class="browser-bar"><span></span><span></span><span></span><div>우리 어린이집 홈페이지</div></div><iframe id="preview" title="홈페이지 미리보기"></iframe></div></div><p id="preview-error" class="preview-error" role="alert" hidden></p></div>
+    </main>
+    <aside class="editor" aria-label="항목 편집"><div class="editor-top"><p class="overline">PAGE EDITOR</p><h2 id="editor-title">페이지 구성</h2><p id="editor-description">영역을 선택해 문구와 사진을 편집하세요.</p></div><div id="editor-body"></div></aside>
+  </div>
+  <footer class="studio-footer"><div class="status"><span class="status-dot"></span><span id="status" role="status">작업 준비 중</span></div><div class="footer-actions"><button type="button" id="load-work" disabled>불러오기</button><button type="button" id="save-work" disabled>저장하기</button><button class="finish" type="button" id="complete-work" disabled>홈페이지 완성하기</button></div></footer>
+  <input type="file" id="work-file" accept="application/json,.json" hidden>
+  <dialog id="welcome-dialog" class="welcome-dialog" aria-labelledby="welcome-title" aria-describedby="welcome-intro">
+    <div class="welcome-art" aria-hidden="true"><div class="welcome-art-inner"><span class="welcome-star">✳</span><svg viewBox="0 0 180 160" fill="none"><path d="M36 76 90 30l54 46v56H36V76Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M75 132V97h30v35M63 69h12m30 0h12M90 16v-6m-59 24-5-5m123 5 5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M90 84c-5-4-13-8-13-15 0-6 8-8 13-2 5-6 13-4 13 2 0 7-8 11-13 15Z" fill="currentColor" opacity=".65"/></svg><span class="welcome-art-caption">A LITTLE PLACE<br>FOR YOUR STORY</span></div></div>
+    <div class="welcome-content"><p class="welcome-kicker">OUR WEBSITE STUDIO</p><h1 id="welcome-title">우리의 첫 홈페이지를<br>시작해요.</h1><p id="welcome-intro">소중한 이야기를 담을 작업 공간을 준비해 주세요.</p>
+      <ol class="welcome-steps"><li><span>01</span><p>바탕화면에 <strong>website</strong>라는 폴더를 만들어 주세요.</p></li><li><span>02</span><p>아래 작업 폴더 연결하기 버튼을 눌러 해당 폴더를 선택해 주세요.</p></li><li><span>03</span><p>필요한 작업물 보관함과 홈페이지 완성본, 백업 폴더는 자동으로 만들어집니다.</p></li></ol>
+      <p class="welcome-message" id="welcome-message" role="status" aria-live="polite"></p>
+      <div class="welcome-actions"><button type="button" id="welcome-connect">작업 폴더 연결하기</button><button type="button" id="welcome-download">다운로드 방식으로 시작</button></div><p class="welcome-footnote">폴더 연결을 지원하지 않는 브라우저에서는 작업 파일을 다운로드하고 다시 불러올 수 있습니다.</p>
+    </div>
+  </dialog>
+  <dialog id="complete-dialog" class="complete-dialog"><div class="complete-heading"><p>YOUR WEBSITE IS READY</p><h2>우리 어린이집 홈페이지가 완성되었습니다.</h2><p id="complete-location"></p></div><div class="complete-actions"><button type="button" id="complete-preview">완성본 미리보기</button><button type="button" id="complete-download">홈페이지 파일 저장</button><button type="button" id="complete-guide">무료 인터넷 공개 방법</button><button type="button" id="complete-back">편집 화면으로 돌아가기</button></div><p class="complete-help" id="complete-help" hidden>Cloudflare 계정에서 Workers &amp; Pages → 애플리케이션 만들기 → 파일 직접 업로드를 선택하고, 저장한 ZIP을 업로드한 뒤 직접 배포하세요. <a href="https://developers.cloudflare.com/pages/get-started/direct-upload/" target="_blank" rel="noopener noreferrer">Cloudflare 공식 안내</a></p><iframe id="complete-frame" title="완성 홈페이지 미리보기" hidden></iframe></dialog>
+  <dialog id="model-dialog" class="model-dialog" aria-labelledby="model-dialog-title" aria-describedby="model-dialog-subtitle">
+    <div class="model-dialog-shell">
+      <header class="model-dialog-head">
+        <div class="model-dialog-title-wrap">
+          <span class="model-dialog-star" aria-hidden="true">✳</span>
+          <div>
+            <p class="model-dialog-kicker">OUR WEBSITE STUDIO · DESIGN COLLECTION</p>
+            <h2 id="model-dialog-title">아홉 가지 아름다운 이야기</h2>
+            <p id="model-dialog-subtitle" class="model-dialog-sub">우리 어린이집에 어울리는 디자인을 만나보세요.</p>
+          </div>
+        </div>
+        <button type="button" class="model-dialog-close" id="model-dialog-close" aria-label="디자인 선택 창 닫기">✕</button>
+      </header>
+      <div class="model-dialog-body" id="model-dialog-body">
+        <div class="model-grid-view" id="model-grid-view">
+          <div class="model-grid" id="model-grid" role="radiogroup" aria-label="디자인 모델 9종"></div>
+        </div>
+        <div class="model-detail-view" id="model-detail-view" hidden style="display:none">
+          <div class="model-detail-bar">
+            <button type="button" class="model-back-button" id="model-detail-back">← 전체 디자인 목록으로</button>
+            <div class="model-detail-info">
+              <strong id="model-detail-name">A-1 따뜻한 마음</strong>
+              <span id="model-detail-type" class="badge badge-type">사진 중심형</span>
+            </div>
+          </div>
+          <div class="model-detail-tabs" id="model-detail-tabs" role="tablist" aria-label="8개 페이지 둘러보기"></div>
+          <div class="model-detail-preview-stage">
+            <iframe id="model-detail-iframe" title="디자인 세부 8페이지 미리보기"></iframe>
+          </div>
+        </div>
+      </div>
+      <footer class="model-dialog-foot">
+        <div class="model-dialog-status">
+          <span id="model-dialog-status-dot" class="status-dot"></span>
+          <span id="model-dialog-selected-info">선택된 디자인: <strong>A-1 따뜻한 마음</strong></span>
+        </div>
+        <div class="model-dialog-actions">
+          <button type="button" class="model-btn-preview" id="model-dialog-preview-btn">8페이지 둘러보기</button>
+          <button type="button" class="model-btn-cancel" id="model-dialog-cancel-btn">취소</button>
+          <button type="button" class="model-btn-confirm" id="model-dialog-confirm-btn">선택 완료</button>
+        </div>
+      </footer>
+    </div>
+  </dialog>
+</body>
+</html>

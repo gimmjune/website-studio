@@ -1,0 +1,24 @@
+# 사용자 작업물 및 로컬 폴더
+우리들의 웹사이트 스튜디오/
+작업물 보관함/
+홈페이지 완성본/
+백업/
+*.json
+
+# 백업 압축 파일
+*.zip
+*.tar.gz
+*.bak
+
+# 테스트 및 개발 스크래치 파일
+test_*
+*.test.js
+scratch/
+tmp/
+
+# OS 및 편집기 임시 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

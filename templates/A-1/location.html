@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="어린이집 홈페이지 A-1 디자인 검토용 시안">
+  <title>오시는 길 | 어린이집 디자인 시안</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="demo-data.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="index.html" aria-label="홈으로 이동">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 39V21M24 27C14 27 11 20 12 14c7 0 12 4 12 13Zm0-5c0-8 5-13 12-13 1 7-2 13-12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong data-demo-field="name">어린이집 이름</strong><small>시연용 기관 정보</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="주 메뉴">
+        <a href="index.html">홈</a>
+        <a href="about.html">어린이집 소개</a>
+        <a href="teachers.html">원장님과 선생님</a>
+        <a href="learning.html">언어와 수리의 즐거움</a>
+        <a href="daily.html">행복한 하루</a>
+        <a href="safety.html">건강하고 안전한 생활</a>
+        <a href="parents.html">부모님과 함께</a>
+        <a href="location.html" aria-current="page">오시는 길</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+<section class="inner-intro"><div class="wrap"><p class="eyebrow">VISIT US</p><h1>따뜻한 만남을<br><em>기다립니다</em></h1><p>방문하시기 전 안내 정보를 확인해 주세요.</p></div></section><section class="inner-section"><div class="wrap"><div class="location-grid"><div><div class="photo inner-photo map-photo" data-demo-map tabindex="-1"><div class="photo-label"><span class="photo-icon" aria-hidden="true">+</span><strong>사진 1</strong><span>어린이집 위치를 표시한 약도</span></div></div><p class="section-note" data-demo-map-note>약도와 주소를 입력해 주세요.</p></div><div><div class="photo inner-photo entrance-photo"><div class="photo-label"><span class="photo-icon" aria-hidden="true">+</span><strong>사진 2</strong><span>어린이집 입구 사진</span></div></div><div class="visit-info"><h2>방문 안내</h2><dl><div><dt>주소</dt><dd data-demo-field="address">입력해 주세요</dd></div><div><dt>전화번호</dt><dd data-demo-field="phone">입력해 주세요</dd></div><div><dt>운영시간</dt><dd data-demo-field="hours">입력해 주세요</dd></div><div><dt>교통 안내</dt><dd data-demo-field="transit">입력해 주세요</dd></div></dl></div></div></div><div class="inner-actions"><button class="button button-primary" type="button" data-demo-phone disabled>전화하기</button><button class="button button-outline" type="button" data-demo-show-map disabled>지도 보기</button></div><p class="demo-status" data-demo-status role="status" aria-live="polite"></p></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><div class="footer-brand"><span class="footer-flower" aria-hidden="true">✳</span><strong data-demo-field="name">어린이집 이름</strong><p>시연용 기관 정보</p></div><div class="footer-info"><p><span>주소</span> <span data-demo-field="address">입력해 주세요</span></p><p><span>전화번호</span> <span data-demo-field="phone">입력해 주세요</span></p><p><span>운영시간</span> <span data-demo-field="hours">입력해 주세요</span></p></div><p class="footer-note">DESIGN PREVIEW</p></div></footer>
+</body>
+</html>

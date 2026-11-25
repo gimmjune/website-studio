@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="어린이집 홈페이지 A-1 홈 디자인 검토용 시안">
+  <title>어린이집 홈페이지 | 디자인 시안</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="demo-data.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="index.html" aria-label="홈으로 이동">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 39V21M24 27C14 27 11 20 12 14c7 0 12 4 12 13Zm0-5c0-8 5-13 12-13 1 7-2 13-12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong data-demo-field="name">어린이집 이름</strong><small>시연용 기관 정보</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="주 메뉴">
+        <a href="index.html" aria-current="page">홈</a>
+        <a href="about.html">어린이집 소개</a>
+        <a href="teachers.html">원장님과 선생님</a>
+        <a href="learning.html">언어와 수리의 즐거움</a>
+        <a href="daily.html">행복한 하루</a>
+        <a href="safety.html">건강하고 안전한 생활</a>
+        <a href="parents.html">부모님과 함께</a>
+        <a href="location.html">오시는 길</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 아이의 하루에 온기를 더해요</p>
+          <h1>따뜻한 마음,<br><em>행복한 성장</em></h1>
+          <p class="hero-subtitle">아이의 작은 내일을 함께합니다.</p>
+          <a class="button button-primary" href="about.html">어린이집 소개</a>
+          <div class="hero-note"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 40S7 30 7 19c0-8 10-11 17-2 7-9 17-6 17 2 0 11-17 21-17 21Z" stroke="currentColor" stroke-width="1.7"/></svg><span>한 아이 한 아이를<br>소중한 마음으로</span></div>
+        </div>
+        <div class="hero-art">
+          <svg class="sun" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="40" cy="40" r="14" stroke="currentColor" stroke-width="2"/><path d="M40 5v9m0 52v9M5 40h9m52 0h9M15 15l6 6m38 38 6 6M65 15l-6 6M21 59l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="photo photo-hero"><div class="photo-label"><span class="photo-icon" aria-hidden="true">+</span><strong>사진 1</strong><span>선생님과 아이가 눈을 맞추거나<br>따뜻하게 교감하는 사진</span></div></div>
+          <div class="hero-caption"><span>WITH WARMTH</span><strong>함께라서 따뜻한 하루</strong></div>
+        </div>
+      </div>
+      <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 76" preserveAspectRatio="none"><path d="M0 37C279 100 422 1 718 31s471 54 722-1v46H0Z"/></svg></div>
+    </section>
+
+    <section class="values" aria-labelledby="values-title">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow centered">OUR LITTLE MOMENTS</p><h2 id="values-title">아이와 함께하는 <em>세 가지 마음</em></h2><p>작은 순간마다 마음을 담아, 함께 자라납니다.</p></div>
+        <div class="card-grid">
+          <article class="value-card"><div class="photo card-photo photo-care"><div class="photo-label"><span class="photo-icon" aria-hidden="true">+</span><strong>사진 2</strong><span>교사의 세심한 돌봄 모습</span></div></div><div class="card-copy"><span class="card-tag">CARE</span><h3>따뜻한 돌봄</h3><p>아이의 마음을 살피고 따뜻하게 다가갑니다.</p></div></article>
+          <article class="value-card"><div class="photo card-photo photo-learn"><div class="photo-label"><span class="photo-icon" aria-hidden="true">+</span><strong>사진 3</strong><span>그림책 또는 놀이를 통한 배움</span></div></div><div class="card-copy"><span class="card-tag">LEARNING</span><h3>즐거운 배움</h3><p>작은 호기심에서 새로운 배움이 시작됩니다.</p></div></article>
+          <article class="value-card"><div class="photo card-photo photo-day"><div class="photo-label"><span class="photo-icon" aria-hidden="true">+</span><strong>사진 4</strong><span>편안하고 즐거운 일상생활</span></div></div><div class="card-copy"><span class="card-tag">EVERYDAY</span><h3>행복한 일상</h3><p>매일의 작은 경험이 소중한 성장으로 이어집니다.</p></div></article>
+        </div>
+        <div class="center-action"><a class="button button-outline" href="learning.html">언어와 수리의 즐거움</a></div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">LET'S TALK TOGETHER</p><h2 id="contact-title">소중한 우리 아이의 첫걸음,<br>함께 이야기해요.</h2><p>따뜻한 만남을 기다립니다.</p></div><div class="contact-actions"><a class="button button-primary" href="parents.html#consultation">입소 상담</a><a class="button button-light" href="location.html">오시는 길</a></div><svg class="book" viewBox="0 0 120 100" fill="none" aria-hidden="true"><path d="M60 78C46 67 29 65 13 70V18c17-5 33-2 47 9m0 51c14-11 31-13 47-8V18c-17-5-33-2-47 9m0 51V27" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 30c9-1 17 0 24 4m24 0c7-4 15-5 24-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><div class="footer-brand"><span class="footer-flower" aria-hidden="true">✳</span><strong data-demo-field="name">어린이집 이름</strong><p>시연용 기관 정보</p></div><div class="footer-info"><p><span>주소</span> <span data-demo-field="address">입력해 주세요</span></p><p><span>전화번호</span> <span data-demo-field="phone">입력해 주세요</span></p><p><span>운영시간</span> <span data-demo-field="hours">입력해 주세요</span></p></div><p class="footer-note">DESIGN PREVIEW</p></div></footer>
+</body>
+</html>

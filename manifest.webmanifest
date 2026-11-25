@@ -1,0 +1,33 @@
+{
+  "name": "우리들의 웹사이트 스튜디오",
+  "short_name": "웹사이트 스튜디오",
+  "description": "어린이집을 위한 9종 반응형 홈페이지 원스톱 제작·편집·출력 스튜디오",
+  "start_url": "./studio.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FAF8F0",
+  "theme_color": "#203B32",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["productivity", "utilities", "design"],
+  "lang": "ko-KR"
+}
